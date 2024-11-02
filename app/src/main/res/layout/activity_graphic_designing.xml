@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraphicDesigning">
+    <TextView
+        android:id="@+id/graphicHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Graphic Designing"
+        android:textColor="@color/button"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/figma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphicHeading" />
+
+    <ImageView
+        android:id="@+id/circularImageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/canva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView" />
+
+    <ImageView
+        android:id="@+id/circularImageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/adobeillustrator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView2" />
+
+    <ImageView
+        android:id="@+id/circularImageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/adobephotoshop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView3" />
+
+    <!--    figma-->
+    <TextView
+        android:id="@+id/figma"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:text="The foundational markup language that structures web content with elements like headings, paragraphs, and images."
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView" />
+
+    <TextView
+        android:id="@+id/figmaDocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:text="Click me"
+        android:textStyle="italic"
+        android:textColor="@color/button"
+        app:layout_constraintBottom_toBottomOf="@+id/figma"
+        app:layout_constraintEnd_toEndOf="@+id/figma"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView"
+        app:layout_constraintTop_toTopOf="@+id/figma" />
+    <!--//canva-->
+    <TextView
+        android:id="@+id/canva"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:text="A styling language that designs web layouts, colors, and fonts, creating visually appealing pages."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView2"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView2" />
+
+    <TextView
+        android:id="@+id/canvaDocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:textColor="@color/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/canva"
+        app:layout_constraintEnd_toEndOf="@+id/canva"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView2"
+        app:layout_constraintTop_toTopOf="@+id/canva" />
+
+    <!--    //adobeIllustrator-->
+
+    <TextView
+        android:id="@+id/ai"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:text="A programming language enabling interactive, dynamic web features like animations, form validation, and event handling."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView3"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/aidocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:textColor="@color/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/ai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ai"
+        app:layout_constraintTop_toTopOf="@+id/ai" />
+
+    <!--    // ps-->
+
+    <TextView
+        android:id="@+id/ps"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:text=" A JavaScript library for building user interfaces,reusable components and efficient state management."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView4"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView4" />
+
+    <TextView
+        android:id="@+id/psdocs"
+        android:layout_width="58dp"
+        android:layout_height="16dp"
+
+        android:text="Click me"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+
+        android:textColor="@color/button"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/ps"
+        app:layout_constraintEnd_toEndOf="@+id/ps"
+        app:layout_constraintStart_toStartOf="@+id/ps"
+        app:layout_constraintTop_toTopOf="@+id/ps" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@color/button"
+        android:text="Need Teacher?"
+        android:textColor="@color/white"
+        android:padding="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

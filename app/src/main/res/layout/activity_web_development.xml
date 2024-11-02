@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/home"
+    android:layout_height="match_parent"
+    tools:context=".WebDevelopmentActivity">
+    <TextView
+        android:id="@+id/webDevHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Web Development"
+        android:textColor="@color/button"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/html"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webDevHeading" />
+
+    <ImageView
+        android:id="@+id/circularImageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/css"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView" />
+
+    <ImageView
+        android:id="@+id/circularImageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/js"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView2" />
+
+    <ImageView
+        android:id="@+id/circularImageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/react"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView3" />
+<!--    HTML-->
+    <TextView
+        android:id="@+id/html"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:text="The foundational markup language that structures web content with elements like headings, paragraphs, and images."
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView" />
+
+    <TextView
+        android:id="@+id/htmlDocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:text="Click me"
+        android:textStyle="italic"
+        android:textColor="@color/button"
+        app:layout_constraintBottom_toBottomOf="@+id/html"
+        app:layout_constraintEnd_toEndOf="@+id/html"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView"
+        app:layout_constraintTop_toTopOf="@+id/html" />
+    <!--//css-->
+    <TextView
+        android:id="@+id/css"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:text="A styling language that designs web layouts, colors, and fonts, creating visually appealing pages."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView2"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView2" />
+
+    <TextView
+        android:id="@+id/cssDocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:textColor="@color/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/css"
+        app:layout_constraintEnd_toEndOf="@+id/css"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView2"
+        app:layout_constraintTop_toTopOf="@+id/css" />
+
+    <!--    //js-->
+
+    <TextView
+        android:id="@+id/js"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:text="A programming language enabling interactive, dynamic web features like animations, form validation, and event handling."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView3"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/jsdocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:textColor="@color/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/js"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/js"
+        app:layout_constraintTop_toTopOf="@+id/js" />
+
+    <!--    // react-->
+
+    <TextView
+        android:id="@+id/react"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:text=" A JavaScript library for building user interfaces,reusable components and efficient state management."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView4"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView4" />
+
+    <TextView
+        android:id="@+id/reactdocs"
+        android:layout_width="58dp"
+        android:layout_height="16dp"
+
+        android:text="Click me"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+
+        android:textColor="@color/button"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/react"
+        app:layout_constraintEnd_toEndOf="@+id/react"
+        app:layout_constraintStart_toStartOf="@+id/react"
+        app:layout_constraintTop_toTopOf="@+id/react" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@color/button"
+        android:text="Need Teacher?"
+        android:textColor="@color/white"
+        android:padding="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

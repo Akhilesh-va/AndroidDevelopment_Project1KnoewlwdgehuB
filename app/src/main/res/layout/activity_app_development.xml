@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/home"
+    android:layout_height="match_parent"
+    tools:context=".appDevelopmentActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="App Development"
+        android:textColor="@color/button"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/androidlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/circularImageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/xml"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView" />
+
+    <ImageView
+        android:id="@+id/circularImageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/kotlin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView2" />
+
+    <ImageView
+        android:id="@+id/circularImageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/youtube"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularImageView3" />
+<!--ANdroid-->
+    <TextView
+        android:id="@+id/android"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:text="Android development involves creating applications for Android devices using languages like Java or Kotlin. "
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView" />
+
+    <TextView
+        android:id="@+id/androidDocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:text="Click me"
+        android:textStyle="italic"
+        android:textColor="@color/button"
+        app:layout_constraintBottom_toBottomOf="@+id/android"
+        app:layout_constraintEnd_toEndOf="@+id/android"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView"
+        app:layout_constraintTop_toTopOf="@+id/android" />
+<!--//xml-->
+    <TextView
+        android:id="@+id/xml"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:text="XML in Android is used for defining app layouts, resources, and configurations, providing a structured way to design UI ."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView2"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView2" />
+
+    <TextView
+        android:id="@+id/xmlDocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:textColor="@color/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/xml"
+        app:layout_constraintEnd_toEndOf="@+id/xml"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView2"
+        app:layout_constraintTop_toTopOf="@+id/xml" />
+
+<!--    //kotlin-->
+
+    <TextView
+        android:id="@+id/kotlin"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:text="Kotlin is a modern, concise language for Android development, enhancing productivity and safety over Java."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView3"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/kotlindocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:textColor="@color/button"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/kotlin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/kotlin"
+        app:layout_constraintTop_toTopOf="@+id/kotlin" />
+
+<!--    // youtube-->
+
+    <TextView
+        android:id="@+id/youtube"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:text="Search For resources on youtube.For my resources DM me"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView4"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView4" />
+
+    <TextView
+        android:id="@+id/youtubedocs"
+        android:layout_width="58dp"
+        android:layout_height="16dp"
+
+        android:text="Click me"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+
+        android:textColor="@color/button"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/youtube"
+        app:layout_constraintEnd_toEndOf="@+id/youtube"
+        app:layout_constraintStart_toStartOf="@+id/youtube"
+        app:layout_constraintTop_toTopOf="@+id/youtube" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@color/button"
+        android:text="Need Teacher?"
+        android:textColor="@color/white"
+        android:padding="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
