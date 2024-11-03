@@ -29,11 +29,12 @@
         app:cardElevation="80dp"
         app:cardBackgroundColor="@color/button"
         android:id="@+id/appDev"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
-
+        app:cardCornerRadius="20dp"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="40dp"
+
 
         >
 
@@ -46,18 +47,19 @@
             android:layout_gravity="center"
             android:textColor="@color/home"
             android:padding="10dp"
+            android:gravity="center"
             android:text="App Development" />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         app:cardElevation="80dp"
         app:cardBackgroundColor="@color/button"
         android:id="@+id/webDev"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
-
+        app:cardCornerRadius="20dp"
         android:layout_toRightOf="@+id/appDev"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="20dp"
         >
         <TextView
             android:id="@+id/webDevelopment"
@@ -66,6 +68,7 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:textColor="@color/home"
+            android:gravity="center"
             android:layout_gravity="center"
             android:padding="10dp"
             android:text="Web Development" />
@@ -75,11 +78,12 @@
         android:id="@+id/ml"
         app:cardElevation="80dp"
         app:cardBackgroundColor="@color/button"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="50dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="40dp"
         android:layout_below="@+id/appDev"
+        app:cardCornerRadius="20dp"
         >
         <TextView
             android:id="@+id/machineLearning"
@@ -89,17 +93,19 @@
             android:textStyle="bold"
             android:textColor="@color/home"
             android:layout_gravity="center"
+            android:gravity="center"
             android:padding="10dp"
             android:text="Machine Learning" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/dataStructure"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
        app:cardElevation="80dp"
         app:cardBackgroundColor="@color/button"
+        app:cardCornerRadius="20dp"
         android:layout_marginStart="50dp"
         android:layout_below="@+id/ml"
         >
@@ -117,14 +123,15 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/graphic"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="50dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="20dp"
         android:layout_toRightOf="@id/ml"
         android:layout_below="@id/webDev"
         app:cardElevation="80dp"
         app:cardBackgroundColor="@color/button"
+        app:cardCornerRadius="20dp"
         >
         <TextView
             android:id="@+id/graphicDesigning"
@@ -132,6 +139,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:textColor="@color/home"
+            android:gravity="center"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:padding="10dp"
